@@ -3,7 +3,13 @@ import React from 'react'
 const Header = () => {
     return (
         <div>
-            <h1>This is React app created by Vite</h1>
+            <section>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </section>
     </div>
     )
 }
