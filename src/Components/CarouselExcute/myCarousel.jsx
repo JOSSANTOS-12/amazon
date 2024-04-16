@@ -1,16 +1,18 @@
 import React from 'react'
 import classes from './Carousel.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import images from'./images/data.js';
+import { images } from'./images/data.js';
 import { Carousel } from "react-responsive-carousel";
 
-const Carouser = () => {
+
+const myCarousel = () => {
     return (
         <div>
-            <Carousel auto-play={true}
+            <Carousel auto-play={1}
                 infiniteLoop={true}
-                showIndicator={false}
-                showThumbnails={false}
+                showIndicators={false}
+                showThumbs={false}
+                showArrows={true}
             >
                 {images.map((imageItem) => { return <img src={imageItem} alt='Images' /> })}
             </Carousel>
@@ -19,5 +21,5 @@ const Carouser = () => {
 )
 }
 
-export default Carouser
+export default myCarousel;
 
