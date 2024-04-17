@@ -1,5 +1,5 @@
 import React from "react"
-import { SlLocationPin } from "react-icons/sl";
+import { GrLocation } from "react-icons/gr";
 import classes from'./header.module.css';
 const Header= () => {
         return (
@@ -16,9 +16,9 @@ const Header= () => {
                 </a>
                 </div>
                 <div className={classes.location}>
-                    <span><SlLocationPin /></span>
+                    <span style={{paddingTop:"18px",fontWeight:"bold" }}><GrLocation /></span>
                     <div><p>Deliver to</p>
-                        <span>Ethiopia</span>
+                        <span style={{fontWeight:"bold"}}>Ethiopia</span>
                     </div>
                     
                 </div>
