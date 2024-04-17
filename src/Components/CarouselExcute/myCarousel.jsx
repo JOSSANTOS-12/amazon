@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 const myCarousel = () => {
     return (
         <div>
-            <Carousel auto-play={1}
+            <Carousel auto-play={true}
                 infiniteLoop={true}
                 showIndicators={false}
                 showThumbs={false}
@@ -16,6 +16,7 @@ const myCarousel = () => {
             >
                 {images.map((imageItem) => { return <img src={imageItem} alt='Images' /> })}
             </Carousel>
+            <div className={classes.color_fade}></div>
 
     </div>
 )
